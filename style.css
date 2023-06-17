@@ -24,3 +24,7 @@ body{
     height: 80vh;
     display: block;
 }
+
+h1{
+    text-align: center;
+}
