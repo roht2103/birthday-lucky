@@ -86,3 +86,30 @@ p{
     padding: 1rem;
     visibility: hidden;
 }
+
+footer{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    position: static;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 90vw;
+    /* border: 3px solid red; */
+    background-color: #353c46;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+}
+
+
+
+li{
+    list-style: none;
+    display: inline;
+    margin: 0rem 2rem;
+}
