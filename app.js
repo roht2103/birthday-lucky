@@ -3,13 +3,17 @@ let luckyNumber=document.querySelector("#lucky-number");
 const checkBtn=document.querySelector("#check");
 let outputMsg=document.querySelector("#output");
 
+luckyNumber=null;
+
 checkBtn.addEventListener("click",function(){
     // console.log(dateOfBirth.value,luckyNumber.value);
 
-    validateDate(dateOfBirth);
+        validateDate(dateOfBirth);
+    
 })
 
 function validateDate(dateOfBirth){
+    
     dateOfBirth= dateOfBirth.value.replaceAll("-","");
     // console.log(dateOfBirth);
     sum(dateOfBirth);
@@ -26,8 +30,19 @@ function sum(dateOfBirth){
 }
 
 function isBirthdayLucky(sum,luckyNumber){
-    console.log(sum,luckyNumber.value,sum%luckyNumber.value);
+
+    if(sum&&luckyNumber){
+        compareData(sum,luckyNumber);
+    }else{
+        alert("Please enter date of birth and lucky number");
+    }
+
+    
+}
+
+function compareData(sum,luckyNumber){
     outputMsg.style.visibility ="inherit";
+
     if(sum%luckyNumber.value==0){
         outputMsg.innerText="BINGO! Your Birthday is Lucky!🚀🥳";
     }else{

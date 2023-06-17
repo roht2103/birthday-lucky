@@ -58,9 +58,18 @@ button{
     margin: 2rem;
     font-size: 1.2rem;
     padding: .5rem 1rem;
-    border-radius: 0.3rem;
+    border: 0px;
+    border-radius: 0.9rem;
     color: #1F2937;
+    cursor: pointer;
     background-color: var(--primary-green);
+}
+
+button:hover{
+    box-shadow: 0rem 0rem 1rem var(--primary-green);
+    transition: .5s;
+    font-size: 1.3rem;
+    color: white;
 }
 
 p{
@@ -71,8 +80,9 @@ p{
     background-color: #495669;
     color: var(--primary-green);
     display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
     font-size: 1.7rem;
+    padding: 1rem;
     visibility: hidden;
 }
