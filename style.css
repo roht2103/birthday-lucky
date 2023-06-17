@@ -4,7 +4,23 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-dark:#1F2937;
+    --primary-green:#6EEfB7;
+}
+
+
 body{
     display: flex;
     justify-content: center;
+    color: var(--primary-green);
+    background-color: var(--primary-dark);
+}
+
+
+.container{
+    margin-top: 3rem;
+    width: 80vw;
+    height: 80vh;
+    display: block;
 }
