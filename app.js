@@ -3,7 +3,7 @@ let luckyNumber=document.querySelector("#lucky-number");
 const checkBtn=document.querySelector("#check");
 let outputMsg=document.querySelector("#output");
 
-luckyNumber=null;
+// luckyNumber=null;
 
 checkBtn.addEventListener("click",function(){
     // console.log(dateOfBirth.value,luckyNumber.value);
