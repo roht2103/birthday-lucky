@@ -76,8 +76,8 @@ button:hover{
 }
 
 p{
-    height: 12vh;
-    width: 25vw;
+    height: fit-content;
+    width: fit-content;
     border: 1px solid;
     border-radius: 0.5rem;
     background-color: #495669;
